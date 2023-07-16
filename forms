@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<html>
 		<body>
-			<form
+			<form>
 				<label for="date">Date:</label><br>
 				<input type="text" id="date" name="date"><br>
 				
