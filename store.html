@@ -4,7 +4,7 @@
 </head>
 <body>
 	<header>
-		<center><a href="index.html"><img src="images/logo.jpg" alt="GaraGym"></a></center>
+		<center><a href="index.html"><img src="logo.jpg" alt="GaraGym"></a></center>
 	</header><hr>
 	<nav>
 		<center><table cellspacing="5" cellpadding="5">
@@ -63,10 +63,6 @@
 			const shirtPrice = 15.00;
 			const quantityInput = document.getElementById("quantity");
 			const quantity = parseInt(quantityInput.value, 10);
-			if (isNaN(quantity) || quantity <= 0) {
-				alert("Please enter a valid quantity.");
-				return;
-				}
 			const totalCost = shirtPrice * quantity;
 			const resultElement = document.getElementById("result");
 			resultElement.textContent = `The total cost for ${quantity} shirt(s) is $${totalCost.toFixed(2)}`;
