@@ -2,14 +2,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px; /* Adjust this value to set the gap between images */
+  gap: 10px;
 }
-
 .row img {
-  width: 100%; /* Ensure the images take the full width of the grid cell */
-  height: auto; /* Preserve the aspect ratio of the images */
+  width: 100%;
+  height: auto;
 }
