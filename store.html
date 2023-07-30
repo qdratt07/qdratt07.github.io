@@ -67,6 +67,7 @@
 			if (quantity > 3) {
 				const discountAmount = shirtPrice * 0.15;
 				totalCost -=discountAmount;
+			} else {
 			}
 			const resultElement = document.getElementById("result");
 			resultElement.textContent = `The total cost for ${quantity} shirt(s) is $${totalCost.toFixed(2)}`;
