@@ -64,6 +64,10 @@
 			const quantityInput = document.getElementById("quantity");
 			const quantity = parseInt(quantityInput.value, 10);
 			const totalCost = shirtPrice * quantity;
+			if (quantity > 3) {
+				const discountAmount = shirtPrice * 0.15;
+				totalCost -=discountAmount;
+			}
 			const resultElement = document.getElementById("result");
 			resultElement.textContent = `The total cost for ${quantity} shirt(s) is $${totalCost.toFixed(2)}`;
 			}
