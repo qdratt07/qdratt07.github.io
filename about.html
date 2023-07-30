@@ -1,27 +1,97 @@
 <!DOCTYPE html>
 <head>
-	<title>About</title>
+	<title>
+		About
+	</title>
+	<style>
+		* {
+		  box-sizing: border-box;
+		}
+		/* Style the header */
+		.header {
+		  background-color: Black;
+		  padding: 15px;
+		  text-align: center;
+		}
+		/* Style the top navigation bar */
+		.topnav {
+		  overflow: hidden;
+		  background-color: red;
+		}
+		/* Style the topnav links */
+		.topnav a {
+		  float: left;
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+		/* Change color on hover */
+		.topnav a:hover {
+		  color: black;
+		}
+		/* Style for the column */
+		.column {
+		  float: left;
+		}
+		.column.left {
+		  margin-top: 8px;
+		  width: 30%;
+		  padding: 50px;
+		  border: 2px solid red;
+		  background-color: black;
+		}
+		.column.right {
+		  margin-top: 8px;
+		  width: auto;
+		  padding-left: 50px;
+		}
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		body {
+		  background-image: url("gym8.jpg");
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: cover;
+		  color: white;
+		  margin: 0;
+		}
+		img {
+		  border-radius: 4px;
+		}
+	</style>
 </head>
 <body>
-	<header>
+	<div class="header">
 		<center><a href="index.html"><img src="logo.jpg" alt="GaraGym"></a></center>
-	</header><hr>
-	<nav>
-		<center><table cellspacing="5" cellpadding="5">
-			<tr>
-				<td><a href="index.html">Home</a></td>
-				<td><a href="about.html">About</a></td>
-				<td><a href="equipment.html">Equipment</a></td>
-				<td><a href="gallery.html">Gallery</a></td>
-				<td><a href="store.html">Store</a></td>
-			</tr>
-		</table></center>
-	</nav><hr>
-
+		<p><big><b>Bringing the Gym to You</b></big></p>
+	</div>
+	<div class="topnav">
+		<b><a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="equipment.html">Equipment</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="store.html">Store</a></b>
+	</div>
 	<!--The title for the below paragraphs as a heading level 2-->
-	<h3>About the Creator</h3>
-	
-	<!--Paragraphs providing personal information about the creator with three hyperlinks that take you to their specific web pages -->
-  <p>As a countryman from Texas, Quincy grew up as an only child with aunts and uncles like his brothers and sisters. As a kid, he enjoyed riding bikes, playing video games, and playing football. Raised in a household where the football team of choice was the <a href="https://www.dallascowboys.com/" target="_new">Dallas Cowboys</a>, he automatically became a fan of the team. As an adult, riding his <a href="https://www.harley-davidson.com/" target="_new">Harley Davidson</a> motorcycle, playing on computers, and <a href="https://prxperformance.com/" target="_new">weightlifting</a> are what he enjoyed most. It is easy to see that he enjoys what he liked as a kid but with adult upgrades.</p>
-	<p>As a retired military member in the Navy, Quincy traveled the world as an Aviation Electrician who serviced both helicopters and jets. At the end of his military career, he chose to work for the government as a Training Specialist at a submarine base in Virginia. After a couple of years living on the east coast, he relocated to his home state of Texas. Continuing to work, he’s now a Configurations Manager for an important role with the government. Quincy enjoys being a homebody by watching television shows and movies when not working. Now and then, you may see him and his wife experiencing the city's nightlife.</p>
+	<div class="row">
+	<div class="column left">
+		<h2>About the Creator</h2>
+		<!--Paragraphs providing personal information about the creator with three hyperlinks that take you to their specific web pages -->
+		<p>As a country-boy from Texas, Quincy grew up in a household where his aunts and uncles were like brothers and sisters. As a kid, he enjoyed riding bikes, playing video games, and playing football. Raised in a household where the football team of choice was the Dallas Cowboys, he automatically became a fan of the team. As an adult, riding his Harley Davidson motorcycle, playing on computers, and weightlifting are what he enjoyed most. It is easy to see that he enjoys what he liked as a kid but with adult upgrades.</p>
+		<p>As a retired military member in the Navy, Quincy traveled the world as an Aviation Electrician who serviced both helicopters and jets. At the end of his military career, he chose to work for the government as a Training Specialist at a submarine base in Virginia. After a couple of years living on the east coast, he relocated to his home state of Texas. Continuing to work, he’s now a Configurations Manager for an important role with the government. Quincy enjoys being a homebody by watching television shows and movies when not working. Now and then, you may see him and his wife experiencing the city's nightlife.</p><br>
+		<h2>Links to hobbies and likes</h2>
+		<p><a href="https://www.dallascowboys.com/" target="_new">Dallas Cowboys</a><br>
+			<a href="https://www.harley-davidson.com/" target="_new">Harley Davidson</a><br>
+			<a href="https://www.bodybuilding.com/" target="_new">Weight Training</a></p>
+	</div>
+	<div class="column right">
+		<img src="me.jpg" alt="Image 1" width="auto" height="684">
+	</div>
+	</div>
 </body>
