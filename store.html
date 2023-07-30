@@ -1,4 +1,192 @@
 <!DOCTYPE html>
+
+<head>
+	<title>
+		Store
+	</title>
+	<style>
+		* {
+		  box-sizing: border-box;
+		}
+		/* Style the header */
+		.header {
+		  background-color: Black;
+		  padding: 15px;
+		  text-align: center;
+		}
+		/* Style the top navigation bar */
+		.topnav {
+		  overflow: hidden;
+		  background-color: red;
+		}
+		/* Style the topnav links */
+		.topnav a {
+		  float: left;
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+		/* Change color on hover */
+		.topnav a:hover {
+		  color: black;
+		}
+		/* Style for the column */
+		.column {
+		  margin-top: 8px;
+		  margin-left: 8px;
+		  width: 25%;
+		  padding: 25px;
+		  border: 1px solid red;
+		  background-color: black;
+		}
+		h2 {
+		  color: white
+		}
+		body {
+		  background-image: url("gym8.jpg");
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: cover;
+		  color: white;
+		  margin: 0;
+		}
+		input[type=text] {
+		  width: 75%;
+		  padding: 12px 20px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		}
+		input[type=submit] {
+		  width: 25%;
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 14px 20px;
+		  margin: 8px 0;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+		input[type=submit]:hover {
+		  background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<center><a href="index.html"><img src="logo.jpg" alt="GaraGym"></a></center>
+		<p><big><b>Bringing the Gym to You</b></big></p>
+	</div>
+	<div class="topnav">
+		<b><a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="equipment.html">Equipment</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="store.html">Store</a></b>
+	</div>
+	<div class="column">
+		<h2>GaraGym Shirts</h2>
+		<form>
+		<label for="salut">Salutation:</label><br>
+		<select id="salut" name="salut">
+			<option value="mr">Mr.</option>
+			<option value="ms">Ms.</option>
+			<option value="mrs">Mrs.</option>
+			<option value="miss">Miss.</option></select><br>
+		
+		<label for="fname">First Name:</label><br>
+		<input type="text" id="fname" name="fname"><br>
+		
+		<label for="lname">Last Name:</label><br>
+		<input type="text" id="lname" name="lname"><br>	
+		
+		<label for="number">Phone Number:</label><br>
+		<input type="text" id="number" name="number"><br>
+		<input type="radio" id="home" name="phonetype"/>Home<br>
+		<input type="radio" id="work" name="phonetype"/>Work<br>
+		<input type="radio" id="mobile" name="phonetype"/>Mobile<br>
+		
+		<label for="email">Email:</label><br>
+		<input type="text" id="email" name="email"><br>
+		
+		<label for="address">Address:</label><br>
+		<textarea name="address" rows="10" cols="35"></textarea><br>
+		<input type="submit" value="Submit">
+		</form>
+		</div>
+	
+	
+		<p>Price: $15.00</p>
+		<label for="size">T-Shirt Size:</label>
+		<select id="size" name="size">
+			<option value="small">Small</option>
+			<option value="medium">Medium</option>
+			<option value="large">Large</option>
+			<option value="xlarge">X-Large</option></select><br>
+	
+		<label for="quantity">Enter Quantity:</label>
+		<input type="number" id="quantity" min="1" value="1">
+	
+		<button onclick="calculateTotalCost()">Calculate Total Cost</button><br>
+		<p id="result"></p>
+	
+		
+	<script>
+		function calculateTotalCost() {
+			const shirtPrice = 15;
+			const quantityInput = document.getElementById("quantity");
+			const quantity = parseInt(quantityInput.value, 10);
+			let totalCost = shirtPrice * quantity;
+			
+			
+			const resultElement = document.getElementById("result");
+			resultElement.textContent = `The total cost for ${quantity} shirt(s) is $${totalCost.toFixed(2)}';
+			}
+	</script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <head>
 	<title>Store</title>
 </head>
