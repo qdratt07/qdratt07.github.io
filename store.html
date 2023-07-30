@@ -132,13 +132,13 @@
 		<input type="number" id="quantity" min="1" value="1">
 	
 		<button onclick="calculateTotalCost()">Calculate Total Cost</button><br>
-		<p id="result"></p>
+		<p> id="result"></p>
 	</div>
 		
 	<script>
 		function calculateTotalCost() {
 			const shirtPrice = 15;
-			const quantityInput = document.getElementById("quantity");
+			var quantityInput = document.getElementById("quantity");
 			const quantity = parseInt(quantityInput.value, 10);
 			let totalCost = shirtPrice * quantity;
 			
@@ -240,7 +240,7 @@
 			<option value="small">Small</option>
 			<option value="medium">Medium</option>
 			<option value="large">Large</option>
-			<option value="xlarge">X-Large</option></select><br>-->
+			<option value="xlarge">X-Large</option></select><br>
 	
 		<label for="quantity">Enter Quantity:</label>
 		<input type="number" id="quantity" min="1" value="1">
@@ -257,4 +257,4 @@
 			resultElement.textContent = `The total cost for ${quantity} shirt(s) is $${totalCost.toFixed(2)}`;
 			}
 	</script>
-</body>
+</body>-->
