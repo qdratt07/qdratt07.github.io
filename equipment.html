@@ -1,32 +1,105 @@
 <!DOCTYPE html>
 <head>
-  <title>Equipment</title>
+	<title>
+		Equipment
+	</title>
+	<style>
+		* {
+		  box-sizing: border-box;
+		}
+		/* Style the header */
+		.header {
+		  background-color: Black;
+		  padding: 15px;
+		  text-align: center;
+		}
+		/* Style the top navigation bar */
+		.topnav {
+		  overflow: hidden;
+		  background-color: red;
+		}
+		/* Style the topnav links */
+		.topnav a {
+		  float: left;
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+		/* Change color on hover */
+		.topnav a:hover {
+		  color: black;
+		}
+		.column {
+		  margin-top: 0px;
+		  width: 100%;
+		  padding: 8px;
+		  background-color: black;
+		}
+		body {
+		  background-image: url("gym8.jpg");
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: cover;
+		  color: white;
+		  margin: 0;
+		}
+		div.gallery {
+		  border: 1px solid #ccc;
+		  float: left;
+		  width: 25%;
+		}
+		div.gallery:hover {
+		  border: 1px solid #777;
+		}
+		div.gallery img {
+		  width: 100%;
+		  height: 500;
+		}
+		div.desc {
+		  padding: 15px;
+		  text-align: center;
+		  background-color: black;
+		}
+	</style>
 </head>
 <body>
-  <header>
-    <center><a href="index.html"><img src="logo.jpg" alt="GaraGym"></a></center>
-  </header><hr>
-  <nav>
-    <center><table cellspacing="5" cellpadding="5">
-      <tr>
-        <td><a href="index.html">Home</a></td>
-        <td><a href="about.html">About</a></td>
-        <td><a href="equipment.html">Equipment</a></td>
-        <td><a href="gallery.html">Gallery</a></td>
-        <td><a href="store.html">Store</a></td>
-      </tr>
-    </table></center>
-  </nav><hr>
-  
+	<div class="header">
+		<center><a href="index.html"><img src="logo.jpg" alt="GaraGym"></a></center>
+		<p><big><b>Bringing the Gym to You</b></big></p>
+	</div>
+	<div class="topnav">
+		<b><a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="equipment.html">Equipment</a>
+		<a href="gallery.html">Gallery</a>
+		<a href="store.html">Store</a></b>
+	</div>
   <!--This is one of the subheads as a heading level 2. Added information in the body is also included-->
-  <h3>What equipment is needed for my gym?</h3>
-  <p>Good question! There are so many options to choose from when it relates to gym products. Here is a list of some things to consider in your gym.</p>
-
-  <!--Provides bullets for the needed items and pictures as a visual representation-->
-  <ul style="list-style-type:square">
-    <li>Heating/Cooling</li><img src="fans.jpg" alt="logo">
-    <li>Flooring</li><img src="floors.jpg" width="275" height="183" alt="logo">
-    <li>Weights</li><img src="weights.jpg" alt="logo">
-    <li>Racks</li><img src="racks.jpg" width="275" height="183" alt="logo">
-  </ul>
+	<div class="column">
+    <h2>What equipment is needed for my gym?</h2>
+    <p>Good question! There are so many options to choose from when it relates to gym products. Here is a list of some things to consider in your gym.</p>
+	</div>
+	<div class="gallery">
+		<a target="_blank" href="fans.jpg"><img src="fans.jpg" alt="Fans" width="600" height="400"></a>
+		<div class="desc">Heating/Cooling</div>
+	</div>
+	<div class="gallery">
+		<a target="_blank" href="floors.jpg"><img src="floors.jpg" alt="Floors" width="600" height="400"></a>
+		<div class="desc">Flooring</div>
+	</div>
+	<div class="gallery">
+		<a target="_blank" href="weights.jpg"><img src="weights.jpg" alt="Weights" width="600" height="400"></a>
+		<div class="desc">Weights</div>
+	</div>
+	<div class="gallery">
+		<a target="_blank" href="racks.jpg"><img src="racks.jpg" alt="Racks" width="600" height="400"></a>
+		<div class="desc">Racks</div>
+	</div><br>
+	<div class="column">
+		<h2>Still Need Help!</h2>
+		<p>While on your journey to creating your dream gym, there will be obstacles to overcome along the way. One of those may come in the form of deciding on what products to choose. No worries...I got you! The video below titled "The Best Home Gym Equipment 2023 - Fitness Most Wanted Awards!" provides an awesome source for picking some of the best products on the market for your gym.</p>
+	</div>
+	   <center><iframe width="1280" height="720" src="https://www.youtube.com/embed/ujc5d636p8c" title="The Best Home Gym Equipment 2023 - Fitness Most Wanted Awards!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 </body>
