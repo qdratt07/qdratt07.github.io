@@ -137,7 +137,7 @@
 				const pricePerShirt = 15.00;
 				const discountThreshold = 3;
 				const discountPercentage = 0.15;
-				const totalCost;
+				var totalCost;
 			if (quantity >= discountThreshold) {
 				var discountedPrice = pricePerShirt * (1 - discountPercentage);
 				totalCost = quantity * discountedPrice;
