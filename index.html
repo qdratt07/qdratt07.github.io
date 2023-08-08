@@ -47,9 +47,27 @@
 		  color: white;
 		  margin: 0;
 		}
+		#playButton {
+		  position: absolute;
+		  top: 20px;
+		  right: 20px;
+		  z-index: 1000; /* Ensure the button is above other content */
+		}
 	</style>
 </head>
 <body>
+	<audio id="Audio" autoplay>
+		<source src="Powerful-Trap-.mp3" type="audio/mpeg">
+	</audio>
+	<button id="playButton">Play Audio</button>
+	<script>
+		const Audio = document.getElementById('Audio');
+		const playButton = document.getElementById('playButton');
+		playButton.addEventListener('click', () => {
+			Audio.play();
+			playButton.style.display = 'none'; // Hide the play button
+		});
+	</script>
 	<div class="header">
 		<center><a href="index.html"><img src="logo.jpg" alt="GaraGym"></a></center>
 		<p><big><b>Bringing the Gym to You</b></big></p>
