@@ -31,14 +31,25 @@
 		.topnav a:hover {
 		  color: black;
 		}
-		.row {
-		  display: grid;
-		  grid-template-columns: repeat(3, 1fr);
-		  gap: 10px;
+		.photo img {
+		  width: 100%;
+		  height: 300px;
 		}
-		 .row img {
-		   width: 100%;
-		   height: auto;
+		.responsive {
+		  padding: 0 6px;
+		  float: left;
+		  width: 24.99999%;
+		}
+		@media only screen and (max-width: 700px) {
+		.responsive {
+		  width: 49.99999%;
+		  margin: 6px 0;
+		  }
+		}
+		@media only screen and (max-width: 500px) {
+		.responsive {
+		  width: 100%;
+		  }
 		}
 		body {
 		  margin: 0;
@@ -62,25 +73,68 @@
 	</div>
 		<h2>The Design</h2>
 		<p>The time has come to start putting your gym ideas into action, but you do not have a design in mind. No worries...I got you! Provided are pictures of other homeowner's garage gyms. Hopefully, this can get the creative juices flowing in your mind toward building a masterpiece gym. Good Luck!</p>
-	<!--first row of three pictures-->
-	<div class="row">
-	    <img src="gym1.jpg" alt="Image 1">
-		<img src="gym2.jpg" alt="Image 2">
-		<img src="gym3.jpg" alt="Image 3">
+	<!--Picture gallery-->
+	<div class="responsive">
+	  <div class="photo">
+	    <a target="_blank" href="gym1.jpg">
+	      <img src="gym1.jpg" alt="Image 1" width="600" height="400">
+			</a>
+	  </div>
 	</div>
-	<!--end of first row-->
-	<!--second row of three pictures-->
-	<div class="row">
-	    <img src="gym4.jpg" alt="Image 4">
-		<img src="gym5.jpg" alt="Image 5">
-		<img src="gym6.jpg" alt="Image 6">
+	<div class="responsive">
+	  <div class="photo">
+			<a target="_blank" href="gym2.jpg">
+		  	<img src="gym2.jpg" alt="Image 2" width="600" height="400">
+			</a>
+	  </div>
 	</div>
-	<!--end of second row-->
-	<!--third row of three pictures-->
-	<div class="row">
-	    <img src="gym7.jpg" alt="Image 7">
-		<img src="gym8.jpg" alt="Image 8">
-		<img src="gym9.jpg" alt="Image 9">
+	<div class="responsive">
+	  <div class="photo">
+			<a target="_blank" href="gym3.jpg">
+		  	<img src="gym3.jpg" alt="Image 3" width="600" height="400">
+			</a>
+	  </div>
 	</div>
-	<!--end of third row-->
+	<div class="responsive">
+	  <div class="photo">
+	    <a target="_blank" href="gym4.jpg">
+		  	<img src="gym4.jpg" alt="Image 4" width="600" height="400">
+			</a>
+	  </div>
+	</div>
+	<div class="responsive">
+	  <div class="photo">
+	    <a target="_blank" href="gym5.jpg">
+		  	<img src="gym5.jpg" alt="Image 5" width="600" height="400">
+			</a>
+	  </div>
+	</div>
+	<div class="responsive">
+	  <div class="photo">
+	    <a target="_blank" href="gym6.jpg">
+		  	<img src="gym6.jpg" alt="Image 6" width="600" height="400">
+			</a>
+	  </div>
+	</div>
+	<div class="responsive">
+	  <div class="photo">
+	    <a target="_blank" href="gym7.jpg">
+		  	<img src="gym7.jpg" alt="Image 7" width="600" height="400">
+			</a>
+	  </div>
+	</div>
+	<div class="responsive">
+	  <div class="photo">
+	    <a target="_blank" href="gym8.jpg">
+		  	<img src="gym8.jpg" alt="Image 8" width="600" height="400">
+			</a>
+	  </div>
+	</div>
+	<div class="responsive">
+	  <div class="photo">
+	    <a target="_blank" href="gym9.jpg">
+		  	<img src="gym9.jpg" alt="Image 9" width="600" height="400">
+			</a>
+	  </div>
+	</div>
 </body>
