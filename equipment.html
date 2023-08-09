@@ -27,21 +27,25 @@
 		  padding: 14px 16px;
 		  text-decoration: none;
 		}
+		.responsive {
+		  padding: 0 6px;
+		  float: left;
+		  width: 24.99999%;
+		}
+		@media only screen and (max-width: 700px) {
+		.responsive {
+		  width: 49.99999%;
+		  margin: 6px 0;
+		  }
+		}
+		@media only screen and (max-width: 500px) {
+		.responsive {
+		  width: 100%;
+		  }
+		}
 		/* Change color on hover */
 		.topnav a:hover {
 		  color: black;
-		}
-		.column {
-		  margin-top: 0px;
-		  width: 100%;
-		  padding: 8px;
-		  background-color: black;
-		}
-		.column2 {
-		  margin-top: 255px;
-		  width: 100%;
-		  padding: 8px;
-		  background-color: black;
 		}
 		body {
 		  background-image: url("gym8.jpg");
@@ -51,23 +55,24 @@
 		  color: white;
 		  margin: 0;
 		}
-		div.gallery {
-		  margin-left: 75px;
-		  border: 1px solid #ccc;
-		  float: left;
-		  width: 20%;
+		.column {
+		float: left;
+		margin-top: 0px;
+		width: 100%;
+		padding: 8px;
+		background-color: black;
 		}
-		div.gallery:hover {
-		  border: 1px solid #777;
-		}
-		div.gallery img {
+		.gallery img {
 		  width: 100%;
-		  height: 500;
+		  height: 250px;
 		}
-		div.desc {
+		.desc {
 		  padding: 15px;
 		  text-align: center;
 		  background-color: black;
+		}
+		.media {
+		width: 100%;
 		}
 	</style>
 </head>
@@ -83,30 +88,37 @@
 		<a href="gallery.html">Gallery</a>
 		<a href="store.html">Store</a></b>
 	</div>
-  <!--This is one of the subheads as a heading level 2. Added information in the body is also included-->
 	<div class="column">
     <h2>What equipment is needed for my gym?</h2>
     <p>Good question! There are so many options to choose from when it relates to gym products. Here is a list of some things to consider in your gym.</p>
-	</div>
+	<div class="responsive">
 	<div class="gallery">
 		<a target="_blank" href="fans.jpg"><img src="fans.jpg" alt="Fans" width="300" height="200"></a>
 		<div class="desc">Heating/Cooling</div>
 	</div>
+	</div>
+	<div class="responsive">
 	<div class="gallery">
 		<a target="_blank" href="floors.jpg"><img src="floors.jpg" alt="Floors" width="300" height="200"></a>
 		<div class="desc">Flooring</div>
 	</div>
+	</div>
+	<div class="responsive">
 	<div class="gallery">
 		<a target="_blank" href="weights.jpg"><img src="weights.jpg" alt="Weights" width="300" height="200"></a>
 		<div class="desc">Weights</div>
 	</div>
+	</div>
+	<div class="responsive">
 	<div class="gallery">
 		<a target="_blank" href="racks.jpg"><img src="racks.jpg" alt="Racks" width="300" height="200"></a>
-		<div class="desc">Racks</div>
+		<div class="desc">Racks</div><br><br>
 	</div>
-	<div class="column2">
+	</div>
 		<h2>Still Need Help!</h2>
 		<p>While on your journey to creating your dream gym, there will be obstacles to overcome along the way. One of those may come in the form of deciding on what products to choose. No worries...I got you! The video below titled "The Best Home Gym Equipment 2023 - Fitness Most Wanted Awards!" provides an awesome source for picking some of the best products on the market for your gym.</p>
 	</div>
-	   <center><iframe width="640" height="360" src="https://www.youtube.com/embed/ujc5d636p8c" title="The Best Home Gym Equipment 2023 - Fitness Most Wanted Awards!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+	<div class="media">
+	   <center><iframe width="640" height="400" src="https://www.youtube.com/embed/ujc5d636p8c" title="The Best Home Gym Equipment 2023 - Fitness Most Wanted Awards!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+	   </div>
 </body>
