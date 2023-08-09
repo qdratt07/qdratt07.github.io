@@ -31,27 +31,16 @@
 		.topnav a:hover {
 		  color: black;
 		}
-		/* Style for the column */
 		.column {
-		  float: left;
-		}
-		.column.left {
 		  margin-top: 0px;
-		  width: 25%;
-		  padding: 50px;
-		  border: 1px solid red;
+		  float: left;
+		  width: 100%;
+		  padding: 25px;
 		  background-color: black;
 		}
-		.column.right {
-		  margin-top: 0px;
-		  width: auto;
-		  padding-left: 50px;
-		}
-		/* Clear floats after the columns */
-		.row:after {
-		  content: "";
-		  display: table;
-		  clear: both;
+		.photo {
+		  margin: auto;
+		  width: 100%;
 		}
 		body {
 		  background-image: url("gym8.jpg");
@@ -78,9 +67,7 @@
 		<a href="gallery.html">Gallery</a>
 		<a href="store.html">Store</a></b>
 	</div>
-	<!--The title for the below paragraphs as a heading level 2-->
-	<div class="row">
-	<div class="column left">
+	<div class="column">
 		<h2>About the Creator</h2>
 		<!--Paragraphs providing personal information about the creator with three hyperlinks that take you to their specific web pages -->
 		<p>As a country-boy from Texas, Quincy grew up in a household where his aunts and uncles were like brothers and sisters. As a kid, he enjoyed riding bikes, playing video games, and playing football. Raised in a household where the football team of choice was the Dallas Cowboys, he automatically became a fan of the team. As an adult, riding his Harley Davidson motorcycle, playing on computers, and weightlifting are what he enjoyed most. It is easy to see that he enjoys what he liked as a kid but with adult upgrades.</p>
@@ -90,8 +77,7 @@
 			<a href="https://www.harley-davidson.com/" target="_new">Harley Davidson</a><br>
 			<a href="https://www.bodybuilding.com/" target="_new">Weight Training</a></p>
 	</div>
-	<div class="column right">
-		<img src="me.jpg" alt="Image 1" width="auto" height="755">
-	</div>
+	<div class="photo">
+		<center><img src="me.jpg" alt="Image 1" width="auto" height="750"></center>
 	</div>
 </body>
