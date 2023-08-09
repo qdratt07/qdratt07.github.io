@@ -31,16 +31,6 @@
 		.topnav a:hover {
 		  color: black;
 		}
-		/* Style for the column */
-		.column {
-		  width: 50%;
-		  padding: 25px;
-		  border: 1px solid red;
-		  background-color: black;
-		}
-		h2 {
-		  color: white
-		}
 		body {
 		  background-image: url("gym8.jpg");
 		  background-repeat: no-repeat;
@@ -49,10 +39,19 @@
 		  color: white;
 		  margin: 0;
 		}
+		.column {
+		  width: 33%;
+		  padding: 50px;
+		  border: 1px solid red;
+		  background-color: black;
+		}
+		h2 {
+		  color: white
+		}
 		input[type=text] {
-		  width: 75%;
+		  width: 100%;
 		  padding: 12px 20px;
-		  margin: 8px 0;
+		  margin: 5px 0;
 		  display: inline-block;
 		  border: 1px solid #ccc;
 		  border-radius: 4px;
@@ -63,13 +62,17 @@
 		  background-color: #4CAF50;
 		  color: white;
 		  padding: 14px 20px;
-		  margin: 8px 0;
+		  margin: 5px 0;
 		  border: none;
 		  border-radius: 4px;
 		  cursor: pointer;
 		}
 		input[type=submit]:hover {
 		  background-color: #45a049;
+		}
+		textarea {
+		  border: none;
+		  border-radius: 4px;
 		}
 	</style>
 </head>
@@ -89,43 +92,38 @@
 		<h2>GaraGym Shirts<br>(Click "<a href="https://form.jotform.com/232188205319152">HERE</a>" for form #2)</h2>
 		<form>
 			<label for="salut">Salutation:</label><br>
-			<select id="salut" name="salut">
-			<option value="mr">Mr.</option>
-			<option value="ms">Ms.</option>
-			<option value="mrs">Mrs.</option>
-			<option value="miss">Miss.</option></select><br>
-		
+				<select id="salut" name="salut">
+				<option value="mr">Mr.</option>
+				<option value="ms">Ms.</option>
+				<option value="mrs">Mrs.</option>
+				<option value="miss">Miss.</option></select><br>
 			<label for="fname">First Name:</label><br>
-			<input type="text" id="fname" name="fname"><br>
-		
+				<input type="text" id="fname" name="fname"><br>
 			<label for="lname">Last Name:</label><br>
-			<input type="text" id="lname" name="lname"><br>	
-		
+				<input type="text" id="lname" name="lname"><br>	
 			<label for="number">Phone Number:</label><br>
-			<input type="text" id="number" name="number"><br>
-			<input type="radio" id="home" name="phonetype"/>Home<br>
-			<input type="radio" id="work" name="phonetype"/>Work<br>
-			<input type="radio" id="mobile" name="phonetype"/>Mobile<br>
-		
+				<input type="text" id="number" name="number"><br>
+					<input type="radio" id="home" name="phonetype"/>Home<br>
+					<input type="radio" id="work" name="phonetype"/>Work<br>
+					<input type="radio" id="mobile" name="phonetype"/>Mobile<br><br>
 			<label for="email">Email:</label><br>
-			<input type="text" id="email" name="email"><br>
-		
+				<input type="text" id="email" name="email"><br>
 			<label for="address">Address:</label><br>
-			<textarea name="address" style="width:75%; height:100px;"></textarea><br>
-			<input type="submit" value="Submit">
+				<textarea name="address" style="width:100%; height:100px;"></textarea><br>
+				<input type="submit" value="Submit">
 		</form>
 			<p>Price per shirt: $15.00</p>
 			<label for="size">T-Shirt Size:</label>
-			<select id="size" name="size">
-				<option value="small">Small</option>
-				<option value="medium">Medium</option>
-				<option value="large">Large</option>
-				<option value="xlarge">X-Large</option></select><br>
+				<select id="size" name="size">
+					<option value="small">Small</option>
+					<option value="medium">Medium</option>
+					<option value="large">Large</option>
+					<option value="xlarge">X-Large</option></select><br>
 			<p>Discount: 15% for 5 or more shirts</p>
 			<label for="quantity">Enter quantity:</label>
-			<input type="number" id="quantity" min="1" step="1" value="1"><br>
-			<button onclick="calculateCost()">Calculate</button>
-			<p>Total Cost: $<span id="totalCost">0.00</span></p>
+				<input type="number" id="quantity" min="1" step="1" value="1"><br>
+				<button onclick="calculateCost()">Calculate</button>
+				<p>Total Cost: $<span id="totalCost">0.00</span></p>
 	</div>
 	<script>
 		function calculateCost() {
