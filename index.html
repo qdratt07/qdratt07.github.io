@@ -37,7 +37,6 @@
 		  margin-top: 0px;
 		  width: 100%;
 		  padding: 15px;
-		  border: 1px solid red;
 		  background-color: black;
 		}
 		body {
@@ -58,18 +57,6 @@
 	</style>
 </head>
 <body>
-	<audio id="Audio">
-		<source src="Powerful-Trap-.mp3" type="audio/mpeg">
-	</audio>
-	<button id="playButton">Play Audio</button>
-	<script>
-		const Audio = document.getElementById('Audio');
-		const playButton = document.getElementById('playButton');
-		playButton.addEventListener('click', () => {
-			Audio.play();
-			playButton.style.display = 'none'; // Hide the play button
-		});
-	</script>
 	<div class="header">
 		<center><a href="index.html"><img src="logo.jpg" alt="GaraGym"></a></center>
 		<p><big><b>Bringing the Gym to You</b></big></p>
@@ -85,4 +72,16 @@
 		<h2>GaraGym</h2>
 		<p>Gara-Gym gives the typical homeowner the knowledge and ability to create the perfect gym in their garage. Gym equipment that is designed with a minimal footprint provides the ideal equipment for a garage. It serves as a space-saving method to acquire the same function as a commercial gym without paying membership fees. Other benefits include more time with family and friends, less time commuting, and it will be open 24 hours. When deciding to build a garage gym, determining if it will be budget-friendly, solely depends upon you. So let's get started and build the garage gym of your dreams.</p>
 	</div>
+	<audio id="Audio">
+		<source src="Powerful-Trap-.mp3" type="audio/mpeg">
+	</audio>
+	<button id="playButton">Play Audio</button>
+	<script>
+		const Audio = document.getElementById('Audio');
+		const playButton = document.getElementById('playButton');
+		playButton.addEventListener('click', () => {
+			Audio.play();
+			playButton.style.display = 'none'; // Hide the play button
+		});
+	</script>
 </body>
