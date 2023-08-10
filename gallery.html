@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>
 		Gallery
 	</title>
@@ -27,15 +28,20 @@
 		  padding: 14px 16px;
 		  text-decoration: none;
 		}
-		/* Change color on hover */
-		.topnav a:hover {
-		  color: black;
-		}
 		body {
-		  margin: 0;
-		  padding: 0;
-		  background-color: black;
+		  background-image: url("gym8.jpg");
+		  background-repeat: no-repeat;
+		  background-position: center;
+		  background-attachment: fixed;
+		  background-size: 100% 100%;
 		  color: white;
+		  margin: 0;
+		}
+		.column {
+		  margin-top: 0px;
+		  width: 100%;
+		  padding: 15px;
+		  background-color: black;
 		}
 		.responsive {
 		  padding: 0 6px;
@@ -71,8 +77,10 @@
 		<a href="gallery.html">Gallery</a>
 		<a href="store.html">Store</a></b>
 	</div>
+	<div class="column">
 		<h2>The Design</h2>
 		<p>The time has come to start putting your gym ideas into action, but you do not have a design in mind. No worries...I got you! Provided are pictures of other homeowner's garage gyms. Hopefully, this can get the creative juices flowing in your mind toward building a masterpiece gym. Good Luck!</p>
+	</div>
 	<!--Picture gallery-->
 	<div class="responsive">
 	  <div class="photo">
